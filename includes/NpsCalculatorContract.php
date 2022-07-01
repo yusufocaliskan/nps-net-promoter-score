@@ -20,14 +20,6 @@ interface NpsCalculatorContract
     public function getNpsScore(): int;
 
     /**
-     * Returns the average score rounded to
-     * one decimal point.
-     * 
-     * @return float Between 1 and 10.
-     */
-    public function getAverageScore(): float;
-
-    /**
      * Returns the number of responses that
      * were promoters.
      * 

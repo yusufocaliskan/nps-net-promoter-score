@@ -2,7 +2,7 @@
 
 require "includes/NpsCalculatorContract.php";
 
-class Nps 
+class Nps implements NpsCalculatorContract
 {   
     /**
      * Holds the response
