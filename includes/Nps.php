@@ -80,18 +80,8 @@ class Nps implements NpsCalculatorContract
      * 
      * @return int Between -100 and 100.
      */
-    public function getNpsScore(){
+    public function getNpsScore(): int {
         return $this->nps_score;
-    }
-
-    /**
-     * Returns the average score rounded to
-     * one decimal point.
-     * 
-     * @return float Between 1 and 10.
-     */
-    public function getAverageScore(){
-   
     }
 
     /**
@@ -100,7 +90,7 @@ class Nps implements NpsCalculatorContract
      * 
      * @return int
      */
-    public function getPromoterCount(){
+    public function getPromoterCount(): int {
         return $this->promoters;
     }
 
@@ -110,7 +100,7 @@ class Nps implements NpsCalculatorContract
      * 
      * @return int
      */
-    public function getPassiveCount(){
+    public function getPassiveCount(): int {
         return $this->passive;
     }
 
@@ -120,7 +110,7 @@ class Nps implements NpsCalculatorContract
      * 
      * @return int
      */
-    public function getDetractorCount(){
+    public function getDetractorCount(): int {
         return $this->detractors;
     }
 
@@ -129,7 +119,7 @@ class Nps implements NpsCalculatorContract
      * 
      * @return int
      */
-    public function getTotalResponseCount(){
+    public function getTotalResponseCount(): int {
         return count($this->responses);
     }
 
